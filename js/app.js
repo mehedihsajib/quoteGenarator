@@ -4,25 +4,25 @@ const quoteAuthor = document.getElementById("author");
 const twitterBtn = document.getElementById("twitter");
 const fbBtn = document.getElementById("facebook");
 const newQuoteBtn = document.getElementById("new-quote");
-const loader = document.getElementById("loader");
+//const loader = document.getElementById("loader");
 
-// Show loading
-function loading() {
-  loader.hidden = false;
-  quoteContainer.hidden = true;
-}
+// // Show loading
+// function loading() {
+//   loader.hidden = false;
+//   quoteContainer.hidden = true;
+// }
 
-// Hide loader
-function complete() {
-  if (!loader.hidden) {
-    quoteContainer.hidden = false;
-    loader.hidden = true;
-  }
-}
+// // Hide loader
+// function complete() {
+//   if (!loader.hidden) {
+//     quoteContainer.hidden = false;
+//     loader.hidden = true;
+//   }
+// }
 
 // Get data from API.
 async function getQuote() {
-  loading();
+  //loading();
   const proxyUrl = "https://whispering-tor-04671.herokuapp.com/";
   const apiUrl =
     "http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json";
